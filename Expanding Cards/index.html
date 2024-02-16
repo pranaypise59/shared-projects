@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            display: flex;
+            width: 60%;
+            height: 50vh;
+            margin: 100px auto;
+        }
+        .card{
+            width: 20%;
+            flex: 0.5;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            border-radius: 20px;
+            transition: flex 0.5s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        h4{
+            color: white;
+            font-size: 20px;
+            width: 0px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            overflow: hidden;
+            transition: width 0.5s ease-in;
+        }
+        .card:hover{
+            flex: 5;
+        }
+        .card:hover h4{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="card" style="background-image: url('https://raw.githubusercontent.com/pranaypise59/sharable-assets/main/images/places/Amritsar.webp')">
+        <h4>Amritsar</h4>
+    </div>
+       <div class="card" style="background-image: url('https://raw.githubusercontent.com/pranaypise59/sharable-assets/main/images/places/Bangalore.webp')">
+        <h4>Banglore</h4>
+    </div>
+       <div class="card" style="background-image: url('https://raw.githubusercontent.com/pranaypise59/sharable-assets/main/images/places/Jodhpur.webp')">
+        <h4>Jodhpur</h4>
+    </div>
+       <div class="card" style="background-image: url('https://raw.githubusercontent.com/pranaypise59/sharable-assets/main/images/places/Kochi.webp')">
+        <h4>Kochi</h4>
+    </div>
+       <div class="card" style="background-image: url('https://raw.githubusercontent.com/pranaypise59/sharable-assets/main/images/places/Agra.webp')">
+        <h4>Agra</h4>
+    </div>
+    </div>
+</body>
+</html>
